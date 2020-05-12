@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/authorsFragment">
+
+    <fragment
+        android:id="@+id/authorsFragment"
+        android:name="com.example.firebasesample.AuthorsFragment"
+        android:label="fragment_authors"
+        tools:layout="@layout/fragment_authors" >
+        <action
+            android:id="@+id/action_authorsFragment_to_addAuthorFragment"
+            app:destination="@id/addAuthorFragment"
+            app:launchSingleTop="false" />
+        <action
+            android:id="@+id/action_authorsFragment_to_updateAuthorFragment"
+            app:destination="@id/updateAuthorFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/addAuthorFragment"
+        android:name="com.example.firebasesample.AddAuthorFragment"
+        android:label="fragment_add_author"
+        tools:layout="@layout/fragment_add_author" >
+        <action
+            android:id="@+id/action_addAuthorFragment_to_authorsFragment"
+            app:destination="@id/authorsFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/updateAuthorFragment"
+        android:name="com.example.firebasesampleapp.updateAuthor.UpdateAuthorFragment"
+        android:label="UpdateAuthorFragment" >
+        <argument
+            android:name="author"
+            app:argType="com.example.firebasesampleapp.data.Author" />
+        <action
+            android:id="@+id/action_updateAuthorFragment_to_authorsFragment"
+            app:destination="@id/authorsFragment"
+            app:popUpTo="@id/updateAuthorFragment"
+            app:popUpToInclusive="true" />
+    </dialog>
+</navigation>

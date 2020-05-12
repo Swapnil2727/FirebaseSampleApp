@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FirebaseSample</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_field_required">This filed is required</string>
+    <string name="success">Success</string>
+    <string name="error">error: %1$s</string>
+</resources>
