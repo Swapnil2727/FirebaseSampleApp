@@ -4,12 +4,26 @@ Firebase Sample app implementing Realtimedatabase
 Inlcudes:
 
 LiveData
+
+
 MVVM architecture
+
+
 Firebase Realtime Database
+
+
 Add data
+
+
 Update data
+
+
 Swipe to Delete Feature
+
+
 Undo deleted item
+
+
 Recyclerview
 
 ![Firebase1](https://user-images.githubusercontent.com/39974969/81768688-f9c1b300-951e-11ea-9c98-928d4490e0e9.PNG)
