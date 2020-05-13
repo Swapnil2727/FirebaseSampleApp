@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-    <variable
-         name="authors"
-         type="com.example.firebasesampleapp.data.Author" />
+
+        <variable
+            name="authors"
+            type="com.example.firebasesampleapp.data.Author" />
 
         <variable
             name="clicklistner"
             type="com.example.firebasesampleapp.data.AuthorsListAdapter.AuthorClickListner" />
-        
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -25,18 +26,19 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:minHeight="100dp"
+            android:onClick="@{() -> clicklistner.onClick(authors)}"
+            app:cardCornerRadius="@dimen/cardview_default_radius"
+            app:cardElevation="@dimen/cardview_default_elevation"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardElevation="@dimen/cardview_default_elevation"
-            app:cardCornerRadius="@dimen/cardview_default_radius"
-            android:backgroundTint="@color/cardview_shadow_end_color">
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:onClick="@{() -> clicklistner.onClick(authors)}">
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/title_textView"

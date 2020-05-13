@@ -17,6 +17,7 @@ import com.example.firebasesampleapp.R
 import com.example.firebasesampleapp.databinding.FragmentAddAuthorBinding
 import com.example.firebasesampleapp.data.Author
 import kotlinx.android.synthetic.main.fragment_add_author.*
+import kotlinx.android.synthetic.main.fragment_authors.*
 
 /**
  * A simple [Fragment] subclass.

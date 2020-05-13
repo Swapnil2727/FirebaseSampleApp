@@ -102,4 +102,22 @@ class AddAuthorViewModel: ViewModel() {
     {
         _navigateToUpdateFragment.value = null
     }
+
+    fun removeAuthor(author: Author)
+    {
+
+        dbAuthor.child(author.id!!).setValue(null).addOnCompleteListener {
+            if(it.isSuccessful)
+            {
+                _result.value = null
+               // _navigateToAuthorsFragment.value=true
+            }
+            else
+            {
+                _result.value = it.exception
+            }
+
+        }
+    }
+
 }

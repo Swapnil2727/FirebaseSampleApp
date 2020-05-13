@@ -38,6 +38,8 @@ class AuthorsListAdapter(val clickListner: AuthorClickListner) : ListAdapter<Aut
             }
 
         }
+
+
     }
 
 
@@ -60,6 +62,7 @@ class AuthorsListAdapter(val clickListner: AuthorClickListner) : ListAdapter<Aut
             clickListner(author)
         }
     }
+
 
 
 

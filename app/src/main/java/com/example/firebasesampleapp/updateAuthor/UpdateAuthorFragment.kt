@@ -12,12 +12,9 @@ import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.example.firebasesample.AddAuthorViewModel
+
 
 import com.example.firebasesampleapp.R
-import com.example.firebasesampleapp.data.Author
-import com.example.firebasesampleapp.databinding.AuthorsListBinding.inflate
-import com.example.firebasesampleapp.databinding.FragmentAddAuthorBinding.inflate
 import com.example.firebasesampleapp.databinding.FragmentUpdateAuthorBinding
 import kotlinx.android.synthetic.main.fragment_update_author.*
 
