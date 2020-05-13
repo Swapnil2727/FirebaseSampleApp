@@ -1,7 +1,7 @@
 # FirebaseSampleApp
 Firebase Sample app implementing Realtimedatabase
 
-Inlcudes:
+# Inlcudes:
 
 LiveData
 
